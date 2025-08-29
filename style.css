@@ -1,0 +1,34 @@
+:root {
+    --color-primary: #36ad69;
+    --color-secondary: #e2d6b5;
+    --color-neutral-dark: #343434;
+    --color-neutral-light: #7b7b7b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--color-secondary);
+    text-align: center;
+    margin-left: 5rem;
+}
+
+#navigation-sidebar {
+    background-color: var(--color-secondary);
+    height: 100%;
+    width: 10rem;
+    position: fixed;
+    overflow-x: hidden;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    top: 0;
+}
+
+main {
+    margin-left: 15rem;
+    margin-right: 5rem;
+}
