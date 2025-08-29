@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
-    --color-primary: #36ad69;
-    --color-secondary: #e2d6b5;
-    --color-neutral-dark: #343434;
-    --color-neutral-light: #7b7b7b;
+    --color-neutral-light: #f0f6f0;
+    --color-neutral-dark: #222323;
 }
 
 * {
@@ -11,24 +11,37 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--color-neutral-dark);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--color-neutral-light);
+}
+
 header {
-    background-color: var(--color-secondary);
+    border: 2px, solid, var(--color-neutral-light);
+    background-color: var(--color-neutral-dark);
+    z-index: 1;
     text-align: center;
-    margin-left: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #navigation-sidebar {
-    background-color: var(--color-secondary);
+    border: 2px, solid, var(--color-neutral-light);
     height: 100%;
     width: 10rem;
     position: fixed;
     overflow-x: hidden;
     padding-inline: 1rem;
-    padding-block: 1rem;
+    padding-block: 2rem;
     top: 0;
 }
 
 main {
     margin-left: 15rem;
     margin-right: 5rem;
+    margin-top: 5rem;
 }
