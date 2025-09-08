@@ -11,12 +11,18 @@
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 body {
     background-color: var(--color-neutral-dark);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     color: var(--color-neutral-light);
+    scroll-behavior: smooth;
 }
 
 header {
@@ -44,6 +50,14 @@ main {
     margin-left: 20rem;
     margin-right: 20rem;
     margin-top: 5rem;
+
+    article {
+        margin-block: 2rem;
+        scroll-margin-top: 3rem;
+    }
+    hr {
+        margin-bottom: 1rem;
+    }
 }
 
 aside {
@@ -61,6 +75,7 @@ ul {
 
 .asciiCover {
     animation: colorRotate 6s linear 0s infinite;
+    font-weight: 900;
 }
 
 @keyframes colorRotate {
